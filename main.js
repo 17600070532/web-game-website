@@ -52,7 +52,7 @@
                     theAnimate(460);
                 };
                 theNext.onclick = function () {
-                    //由于上边定时器的作用，index会一直递增下去，我们只有5个小圆点，所以需要做出判断
+                    //由于上边定时器的作用，index会一直递增下去，我们只有4个小圆点，所以需要做出判断
                     index += 1;
                     if (index > 4) {
                         index = 1
@@ -128,12 +128,9 @@
                     var rows = tBody.getElementsByTagName("tr")
                     for (var i = 0; i < rows.length; i++) {
                         rows[i].onmouseover = function () {
-
                             this.style.backgroundColor = "#394E5E";
-
                         }
                         rows[i].onmouseout = function () {
                             this.style.backgroundColor = ""
-
                         }
                     }
